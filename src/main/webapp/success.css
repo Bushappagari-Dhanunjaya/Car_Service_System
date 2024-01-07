@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+  body{
+            background-color: rgb(236, 235, 235);
+        }
+        div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            text-align: center;
+            width:350px;
+            height:200px;
+            margin:100px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            box-shadow: 3px 3px 3px rgb(133, 132, 132),3px 3px 10px rgb(236, 236, 236);
+        }
+        div a{
+             margin-top: 20px;
+             text-decoration: none;
+             color:rgb(4, 4, 104);
+             font-weight: bold;
+             font-size: large;
+             
+        }
+        #right-arrow{
+            transition: 0.2s;
+        }
+       a:hover #right-arrow{
+        transform: translateX(10px);
+       }
+        #done{
+            color:green;
+            font-size: xx-large;
+        }

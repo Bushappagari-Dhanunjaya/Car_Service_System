@@ -1,0 +1,34 @@
+@charset "ISO-8859-1";
+#about-about {
+    height: 330px;
+    margin-top: 0px;
+    background-color: rgb(15, 15, 17);
+
+}
+
+#footer {
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.About-headings {
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    padding: 40px;
+}
+
+.About-headings a {
+    text-decoration: none;
+    color: white;
+}
+
+.About-headings a:hover {
+    color:gold;
+
+}

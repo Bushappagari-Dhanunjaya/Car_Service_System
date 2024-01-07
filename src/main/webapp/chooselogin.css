@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.navbar{
+    color: transparent;
+    background-image: linear-gradient(to top,rgb(247, 45, 129),blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    height:55px;
+    line-height: 8px;
+    border: 2px solid wheat;
+    
+}
+.navbar p{
+    margin-left: 10%;
+    font-size: 24px;
+    font-weight: 600;
+    
+    
+}
+.bg-container{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/chooselogin.jpg);
+    height:90.2vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+
+}
+
+.admin{
+    width:350px;
+    height:250px;
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(10px);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black,2px 2px 12px black;
+    transition: 0.3s;
+}
+
+
+.admin-customer{
+    transform: scale(0.5);
+    position: absolute;
+    top:-125px;
+    right:70px;
+    filter: drop-shadow(2px 2px 8px black);
+    transition: 0.3s;
+}
+.admin p{
+ position: absolute;
+ right:80px;
+ top:20px;
+ font-size: 25px;
+}
+.admin button{
+    position: absolute;
+    right:60px;
+    top:150px;
+    background-image: linear-gradient( to right,rgb(247, 45, 129),blue);
+    border:none;
+    height:35px;
+    width:110px;
+    color:white;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.admin button:hover{
+    background-image: linear-gradient( to left,rgb(247, 45, 129),blue);
+    transform: scale(1.06);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Send a car service request</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/c2.jpg);
+            background-size: cover;
+        }
+        .container {
+            width: 300px;
+            padding: 40px 30px;
+            background-color: transparent;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px white, 0px 0px 8px black;
+            backdrop-filter: blur(8px);
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            font-size: 14px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background-color: white;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="/CSS/ServiceRequest">
+            <label for="carregno">Car Regstration No</label>
+            <input type="text" id="carregno" name="carregno" placeholder="Car Reg No.." required>
+
+            <label for="sr">Get Service</label>
+            <input type="text" id="sr" name="serviceRequest" placeholder="Get Service.." required>
+
+          <br><br> <button type="submit">Request Service</button>
+        </form>
+    </div>
+</body>
+</html>

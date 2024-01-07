@@ -1,0 +1,456 @@
+@charset "ISO-8859-1";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.home-body-container {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('images/c3.jpg');
+    height: 100vh;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+}
+
+#logo-name {
+    color: white;
+    margin: auto;
+}
+
+#x {
+    color: gold;
+    text-shadow: 0px 0px 2px black;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 60px;
+    color: white;
+    padding: 4px;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    height: 2px;
+    width: 0%;
+    transition: 0.2s;
+
+}
+
+nav ul li a:hover::after {
+    content: "";
+    background-color: gold;
+    width: 100%;
+}
+
+.profile-container{
+    background-color: white;
+    transform: skew(-45deg);
+    box-shadow: 2px 2px 0px gold;
+    height:30px;
+    max-width:40%;
+    min-width: 200px;
+    margin: 10px auto;
+    line-height: 30px;
+}
+.profile-container p{
+    color: black;
+    transform: skew(45deg);
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+}
+#profile-icon{
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    position: absolute;
+    left:-23px;
+    top:-8px;
+    font-weight: lighter;
+}
+
+.body-container {
+    color: white;
+    text-align: center;
+    transform: translateY(100%);
+
+
+}
+
+
+.body-container button {
+    width: 130px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.body-container button::before {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 5px;
+    width: 31%;
+    rotate: -60deg;
+    position: absolute;
+    left: -30px;
+    bottom: 14px;
+    transition: 0.3s;
+    visibility: hidden;
+
+}
+
+.body-container button:hover::before {
+    content: "";
+    visibility: visible;
+    display: block;
+    left: 130px;
+
+}
+
+/* services-----------> */
+.our-services{
+    background-color: black;
+    width:250px;
+    height:40px;
+    transform: skew(-45deg);
+    box-shadow: 8px 4px 1px gold;
+    margin-left: -20px;
+}
+.our-services h2{
+    margin-left:40px;
+    color:gold;
+    transform: skew(45deg);
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gold;
+  
+
+}
+
+.service {
+    color: white;
+    width:300px;
+    height:160px;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    padding: 30px 40px;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px black;
+}
+
+.service:hover {
+    transform: scale(0.97);
+
+
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.service:nth-child(1) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_mechanical_service.jpg');
+
+}
+
+.service:nth-child(2) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_paint.avif');
+}
+
+.service:nth-child(3) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_electrical.avif');
+}
+
+.service:nth-child(4) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_emission.jpg');
+}
+
+.service:nth-child(5) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_tyre.jpg');
+}
+
+.service:nth-child(6) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/HVAC.jpg');
+}
+
+.service:nth-child(7) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_transport.avif');
+}
+
+.service:nth-child(8) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_collision.jpg');
+}
+
+.service:nth-child(9) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.3)80%), url('images/car_recycling.jpg');
+}
+
+.car-service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/cc6.avif);
+    background-size: cover;
+    position: relative;
+   
+}
+
+.car-services {
+   width:38%;
+   margin:10px auto;
+    border-radius: 2px;
+    height: 150px;
+    background-color: transparent;
+    padding: 40px 40px;
+    color: black;
+    font-weight: bold;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 4px rgb(85, 85, 85);
+    position: relative;
+
+
+}
+
+.car-service-heading{
+    background-color: gold;
+    width:180px;
+    padding:0px 10px;
+    transform: skew(-40deg);
+    box-shadow: 4px 4px 4px black ;
+}
+
+.get-now {
+    width: 130px;
+    height: 30px;
+    background-color: transparent;
+    border: white 2px solid;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.6s;
+    margin-top:30px;
+}
+
+.get-now:hover {
+    background-color: white;
+    color: black;
+    z-index: 10;
+
+}
+
+.car-car {
+    width: 400px;
+    height: 360px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1200px) {
+    .car-car {
+        width: 300px;
+        height: 260px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .car-car {
+        width: 220px;
+        height: 190px;
+        top: 90px;
+
+
+    }
+    #add-det{
+        margin-top:-20px;
+    }
+    .get-now{
+        margin-top:-20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .car-car {
+        width: 180px;
+        height: 160px;
+        top: 120px;
+    }
+    .get-now{
+        margin-top:15px;
+    }
+
+}
+
+
+/* pop up messages*/
+
+#wrong{
+    font-size:30px;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    font-weight: 400;
+    cursor: pointer ;
+}
+.popup-div{
+    background-color: aquamarine;
+    height:100px;
+    width:350px;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 80px 20px;
+    margin:100px auto;
+    display: none;
+    transform: scale(0.2);
+    box-shadow: 0px 0px 10px aquamarine;
+    position: absolute;
+    z-index: 10;
+    left:400px;
+}
+.open-popup-div{
+    display: block;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.tf{
+    width:70%;
+    height:30px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+.submit-btn{
+    padding: 8px;
+    font-size: 14px;
+    height:30px;
+    background-color: aliceblue;
+    border-radius: 2px;
+    border:none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 100ms;
+}
+.submit-btn:hover{
+    transform: scale(1.04);
+}
+
+/* check status */
+
+#wrong-2{
+    color:black;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size:30px;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    font-weight: 400;
+    cursor: pointer ;
+}
+.statusPopupDiv{
+    background-color: orange;
+    height:100px;
+    width:350px;
+    border-radius: 10px;
+    text-align: center; 
+    padding: 80px 20px;
+    margin:100px auto;
+    display: none;
+    transform: scale(0.2);
+    box-shadow: 0px 0px 10px orange;
+    position: absolute;
+    z-index: 10;
+    left:400px;
+}
+.statusPopupDivOpen{
+    display: block;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+#about-about {
+    height: 330px;
+    margin-top: 0px;
+    background-color: rgb(15, 15, 17);
+
+}
+
+#footer {
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.About-headings {
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    padding: 40px;
+}
+
+.About-headings a {
+    text-decoration: none;
+    color: white;
+}
+
+.About-headings a:hover {
+    color:gold;
+
+}
+
+
